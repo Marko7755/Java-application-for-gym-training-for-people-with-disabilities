@@ -1,0 +1,15 @@
+.menu-button .text {
+    -fx-fill: white;
+}
+
+.menu-item .text {
+    -fx-fill: black;
+}
+
+.menu-bar {
+    -fx-background-color: grey;
+}
+
+
+
+

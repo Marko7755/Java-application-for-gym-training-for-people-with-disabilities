@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="444.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.projekt.controller.SignUpController">
+    <children>
+        <ImageView fitHeight="451.0" fitWidth="600.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../images/loginImage.jpg" />
+            </image>
+        </ImageView>
+        <VBox layoutX="57.0" layoutY="36.0" prefHeight="379.0" prefWidth="190.0" style="-fx-background-color: white;">
+            <children>
+                <GridPane prefHeight="361.0" prefWidth="190.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="106.60001220703126" minHeight="0.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="106.60001220703126" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="106.60001220703126" minHeight="10.0" prefHeight="47.99998779296874" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="224.00001831054686" minHeight="10.0" prefHeight="47.99999389648437" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="222.2000030517578" minHeight="7.999978637695278" prefHeight="44.000018310546864" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="222.2000030517578" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="222.2000030517578" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="222.2000030517578" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label prefHeight="34.0" prefWidth="91.0" text="Sign up" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                            <font>
+                                <Font name="Arial Black" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label text="Username" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                            <font>
+                                <Font name="Bell MT" size="12.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets bottom="5.0" left="15.0" top="4.0" />
+                            </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="usernameTextField" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                            <GridPane.margin>
+                                <Insets left="15.0" right="15.0" />
+                            </GridPane.margin>
+                        </TextField>
+                        <Label text="Password" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Bell MT" size="12.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets bottom="20.0" left="15.0" top="4.0" />
+                            </GridPane.margin>
+                        </Label>
+                        <Label GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                            <GridPane.margin>
+                                <Insets top="55.0" />
+                            </GridPane.margin>
+                        </Label>
+                  <Label text="Name" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="15.0" top="4.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bell MT" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameTextField" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#signUp" prefHeight="26.0" prefWidth="170.0" style="-fx-background-radius: 15;" styleClass="custom-button" stylesheets="@../../../style/loginButton.css" text="Sign up" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" top="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <TextField fx:id="surnameTextField" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label text="Surname" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="Bell MT" size="12.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="15.0" top="4.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <PasswordField fx:id="passwordPasswordField" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" top="24.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <Button fx:id="loginNowButton" mnemonicParsing="false" onAction="#loginNow" prefHeight="26.0" prefWidth="170.0" style="-fx-background-radius: 15;" styleClass="custom-button" stylesheets="@../../../style/loginButton.css" text="Login now" visible="false" GridPane.columnSpan="2" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="35.0" right="35.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="goBackButton" mnemonicParsing="false" onAction="#goBackToLoginBtn" style="-fx-background-radius: 15;" styleClass="custom-button" stylesheets="@../../../style/loginButton.css" text="Go back" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+                    </children>
+                </GridPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane prefHeight="666.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.projekt.controller.AddressSearchController">
+    <content>
+        <AnchorPane prefHeight="842.0" prefWidth="543.0">
+            <children>
+                <GridPane layoutY="73.0" prefHeight="765.0" prefWidth="551.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="612.0" minWidth="10.0" prefWidth="552.400048828125" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="666.0" minWidth="10.0" prefWidth="602.799951171875" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="220.0" minHeight="0.0" prefHeight="61.99999084472657" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="546.0" minHeight="10.0" prefHeight="40.40000915527344" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="546.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="546.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="514.0" minHeight="10.0" prefHeight="505.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Address Search" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets top="15.0" />
+                            </GridPane.margin>
+                        </Label>
+                        <Label text="Street:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                            <font>
+                                <Font name="Arial" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="addressStreetTextField" prefHeight="25.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                            <GridPane.margin>
+                                <Insets left="15.0" right="15.0" />
+                            </GridPane.margin>
+                        </TextField>
+                        <TableView fx:id="addressTableView" prefHeight="514.0" prefWidth="560.0" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                            <columns>
+                                <TableColumn fx:id="addressIdTableColumn" prefWidth="24.0" text="ID" />
+                                <TableColumn fx:id="addressStreetTableColumn" minWidth="0.0" prefWidth="309.0" text="Street" />
+                                <TableColumn fx:id="addressCityTableColumn" prefWidth="135.0" text="City" />
+                                <TableColumn fx:id="addressHallTableColumn" prefWidth="86.0" text="Hall" />
+                            </columns>
+                        </TableView>
+                        <Button mnemonicParsing="false" onAction="#addressSearch" prefHeight="31.0" prefWidth="61.0" text="Search" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <TextField fx:id="addressCityTextField" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </TextField>
+                        <Label text="City:" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                            <font>
+                                <Font name="Arial" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+            <HBox fx:id="menuBarHbox" prefHeight="65.0" prefWidth="551.0" />
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>

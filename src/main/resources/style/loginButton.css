@@ -1,0 +1,7 @@
+.custom-button{
+    -fx-background-color: linear-gradient(to bottom, #021617, #032526, #047E7F);
+    -fx-text-fill: white; /* Optional: Adjust text color */
+    -fx-font-size: 14px; /* Optional: Adjust font size */
+    -fx-font-family: Arial; /* Optional: Adjust font family */
+    -fx-font-weight: bold;
+}

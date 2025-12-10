@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox prefHeight="60.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.projekt.controller.MenuBarController">
+   <Button fx:id="iconButton" onAction="#iconButtonClicked" prefHeight="62.0" prefWidth="78.0" style="-fx-background-radius: 0;" styleClass="custom-button" stylesheets="@../../../style/iconButton.css">
+      <graphic>
+         <ImageView fitHeight="51.0" fitWidth="58.0" pickOnBounds="true">
+            <image>
+               <Image url="@../../../images/icon.jpg" />
+            </image>
+         </ImageView>
+      </graphic>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+   <MenuBar fx:id="menuBar" prefHeight="62.0" prefWidth="346.0" style="-fx-background-color: grey;" styleClass="text" stylesheets="@../../../style/menu.css" HBox.hgrow="ALWAYS">
+      <menus>
+         <Menu mnemonicParsing="false" text="Person">
+            <items>
+               <MenuItem mnemonicParsing="false" onAction="#personSearchScreen" text="Search" />
+               <MenuItem mnemonicParsing="false" onAction="#showAddNewPersonScreen" text="Add" />
+               <MenuItem fx:id="personEditMenuItem" mnemonicParsing="false" onAction="#editPersonScreen" text="Edit" />
+               <MenuItem mnemonicParsing="false" onAction="#deletePersonScreen" text="Delete" />
+               <MenuItem mnemonicParsing="false" onAction="#noteATrainingScreen" text="Note a Training" />
+               <MenuItem mnemonicParsing="false" onAction="#enterPersonClubIdScreen" text="Check" />
+            </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Exercise">
+            <items>
+               <MenuItem mnemonicParsing="false" onAction="#showSearchExerciseScreen" text="Search" />
+               <MenuItem mnemonicParsing="false" onAction="#showAddNewExerciseScreen" text="Add" />
+               <MenuItem mnemonicParsing="false" onAction="#showEditExerciseScreen" text="Edit" />
+               <MenuItem mnemonicParsing="false" onAction="#showDeleteExerciseScreen" text="Delete" />
+               <MenuItem mnemonicParsing="false" onAction="#showPersonExerciseChangeScreen" text="Change/Add" />
+            </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Address">
+            <items>
+               <MenuItem mnemonicParsing="false" onAction="#showAddressSearchScreen" text="Search" />
+               <MenuItem mnemonicParsing="false" onAction="#showAddNewAddressScreen" text="Add" />
+               <MenuItem mnemonicParsing="false" onAction="#showEditAddressScreen" text="Edit" />
+               <MenuItem mnemonicParsing="false" onAction="#deleteAnAddress" text="Delete" />
+            </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Competition">
+            <items>
+               <MenuItem mnemonicParsing="false" onAction="#checkCompetitionConditionsScreen" text="Check" />
+               <MenuItem mnemonicParsing="false" onAction="#personCompetitionEdit" text="Change" />
+            </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Changes">
+           <items>
+             <MenuItem mnemonicParsing="false" onAction="#allProjectChangesMadeScreen" text="Show" />
+           </items>
+         </Menu>
+      </menus>
+   </MenuBar>
+</HBox>

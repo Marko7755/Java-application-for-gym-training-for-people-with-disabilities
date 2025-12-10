@@ -1,0 +1,6 @@
+.custom-button{
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+    -fx-padding: 0;
+    -fx-alignment: center;
+}

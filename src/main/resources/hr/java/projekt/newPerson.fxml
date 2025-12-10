@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane hbarPolicy="NEVER" prefHeight="659.0" prefWidth="1083.0" vbarPolicy="AS_NEEDED" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.projekt.controller.NewPersonController">
+   <content>
+      <AnchorPane prefHeight="1110.0" prefWidth="1083.0">
+   <ImageView fitHeight="1053.0" fitWidth="1083.0" layoutY="57.0" opacity="0.1" pickOnBounds="true">
+      <image>
+         <Image url="@../../../images/newPerson.jpg" />
+      </image>
+   </ImageView>
+   <HBox fx:id="menuBarHbox" alignment="TOP_LEFT" prefHeight="59.0" prefWidth="1083.0" AnchorPane.bottomAnchor="1051.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+   </HBox>
+
+   <GridPane layoutY="65.0" prefHeight="1023.0" prefWidth="1066.0">
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="221.0" minHeight="0.0" prefHeight="55.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="221.0" minHeight="6.0" prefHeight="59.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="384.0" minHeight="10.0" prefHeight="188.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="384.0" minHeight="10.0" prefHeight="188.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="384.0" minHeight="10.0" prefHeight="180.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+         <Label prefHeight="38.0" prefWidth="263.0" text="Add a new Person" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+               <Font name="Arial Black" size="26.0" />
+            </font>
+            <GridPane.margin>
+               <Insets top="11.0" />
+            </GridPane.margin>
+         </Label>
+         <Label text="Name:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+            <font>
+               <Font name="Arial" size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="personNameTextField" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <GridPane.margin>
+               <Insets left="15.0" right="15.0" />
+            </GridPane.margin>
+         </TextField>
+         <Label text="Surname:" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label prefHeight="20.0" prefWidth="66.0" text="Club ID(#):" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+         </Label>
+         <Label text="Membership date:" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+         </Label>
+         <Label text="Tuesday:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+            <font>
+               <Font name="Arial" size="14.0" />
+            </font>
+            <GridPane.margin>
+               <Insets left="5.0" top="15.0" />
+            </GridPane.margin>
+         </Label>
+         <TextField fx:id="personSurnameTextField" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+               <Insets left="15.0" right="15.0" />
+            </GridPane.margin>
+         </TextField>
+         <TextField fx:id="personClubIdTextField" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <GridPane.margin>
+               <Insets left="15.0" right="15.0" />
+            </GridPane.margin>
+         </TextField>
+         <Label text="Monday:" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+            <font>
+               <Font name="Arial" size="14.0" />
+            </font>
+            <GridPane.margin>
+               <Insets top="15.0" />
+            </GridPane.margin>
+         </Label>
+         <Label text="Wednesday:" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+            <font>
+               <Font name="Arial" size="14.0" />
+            </font>
+            <GridPane.margin>
+               <Insets left="5.0" top="15.0" />
+            </GridPane.margin>
+         </Label>
+         <Label text="Thursday:" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="TOP">
+            <font>
+               <Font name="Arial" size="14.0" />
+            </font>
+            <GridPane.margin>
+               <Insets left="5.0" top="17.0" />
+            </GridPane.margin>
+         </Label>
+         <Label text="Friday:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="TOP">
+            <font>
+               <Font name="Arial" size="14.0" />
+            </font>
+            <GridPane.margin>
+               <Insets left="5.0" top="17.0" />
+            </GridPane.margin>
+         </Label>
+         <Label prefHeight="25.0" prefWidth="389.0" text="Choose exercises, sets and reps for each day" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+            <font>
+               <Font name="Berlin Sans FB" size="21.0" />
+            </font>
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+         </Label>
+         <Label text="Saturday:" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="TOP">
+            <GridPane.margin>
+               <Insets left="5.0" top="17.0" />
+            </GridPane.margin>
+            <font>
+               <Font name="Arial" size="14.0" />
+            </font>
+         </Label>
+         <Label text="Sunday:" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="TOP">
+            <GridPane.margin>
+               <Insets left="5.0" top="15.0" />
+            </GridPane.margin>
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <ComboBox fx:id="mondayExerciseComboBox" prefWidth="150.0" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <GridPane.margin>
+               <Insets bottom="70.0" />
+            </GridPane.margin>
+         </ComboBox>
+         <TextField fx:id="mondaySetsTextField" prefHeight="25.0" prefWidth="286.0" GridPane.rowIndex="6">
+            <GridPane.margin>
+               <Insets left="155.0" right="155.0" top="10.0" />
+            </GridPane.margin>
+         </TextField>
+         <ComboBox fx:id="tuesdayExerciseComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <GridPane.margin>
+               <Insets bottom="70.0" />
+            </GridPane.margin>
+         </ComboBox>
+         <TextField fx:id="tuesdaySetsTextField" prefHeight="25.0" prefWidth="44.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <GridPane.margin>
+               <Insets left="155.0" right="155.0" top="10.0" />
+            </GridPane.margin>
+         </TextField>
+         <ComboBox fx:id="wednesdayExerciseComboBox" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <GridPane.margin>
+               <Insets bottom="70.0" />
+            </GridPane.margin>
+         </ComboBox>
+         <TextField fx:id="wednesdaySetsTextField" GridPane.columnIndex="2" GridPane.rowIndex="6">
+            <GridPane.margin>
+               <Insets left="155.0" right="155.0" top="10.0" />
+            </GridPane.margin>
+         </TextField>
+         <ComboBox fx:id="thursdayExerciseComboBox" prefWidth="150.0" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+            <GridPane.margin>
+               <Insets bottom="70.0" />
+            </GridPane.margin>
+         </ComboBox>
+         <TextField fx:id="thursdaySetsTextField" GridPane.rowIndex="7">
+            <GridPane.margin>
+               <Insets left="155.0" right="155.0" top="10.0" />
+            </GridPane.margin>
+         </TextField>
+         <ComboBox fx:id="fridayExerciseComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+            <GridPane.margin>
+               <Insets bottom="70.0" />
+            </GridPane.margin>
+         </ComboBox>
+         <TextField fx:id="fridaySetsTextField" GridPane.columnIndex="1" GridPane.rowIndex="7">
+            <GridPane.margin>
+               <Insets left="155.0" right="155.0" top="10.0" />
+            </GridPane.margin>
+         </TextField>
+         <ComboBox fx:id="saturdayExerciseComboBox" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+            <GridPane.margin>
+               <Insets bottom="70.0" />
+            </GridPane.margin>
+         </ComboBox>
+         <TextField fx:id="saturdaySetsTextField" GridPane.columnIndex="2" GridPane.rowIndex="7">
+            <GridPane.margin>
+               <Insets left="155.0" right="155.0" top="10.0" />
+            </GridPane.margin>
+         </TextField>
+         <ComboBox fx:id="sundayExerciseComboBox" prefWidth="150.0" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+            <GridPane.margin>
+               <Insets bottom="70.0" />
+            </GridPane.margin>
+         </ComboBox>
+         <TextField fx:id="sundaySetsTextField" prefHeight="25.0" prefWidth="158.0" GridPane.halignment="LEFT" GridPane.rowIndex="8">
+            <GridPane.margin>
+               <Insets left="155.0" right="155.0" top="10.0" />
+            </GridPane.margin>
+         </TextField>
+         <TextField fx:id="sundayRepsTextField" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="35.0" left="155.0" right="155.0" />
+            </GridPane.margin>
+         </TextField>
+         <Label text="Sets:" GridPane.rowIndex="8">
+            <GridPane.margin>
+               <Insets left="120.0" top="15.0" />
+            </GridPane.margin>
+         </Label>
+         <Label text="Reps:" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="40.0" left="120.0" />
+            </GridPane.margin>
+         </Label>
+         <Button mnemonicParsing="false" onAction="#saveExerciseForSunday" text="Save" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="BOTTOM" />
+         <TextField fx:id="mondayRepsTextField" layoutX="165.0" layoutY="338.0" prefHeight="25.0" prefWidth="286.0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="35.0" left="155.0" right="155.0" />
+            </GridPane.margin>
+         </TextField>
+         <Label text="Sets:" GridPane.rowIndex="6">
+            <GridPane.margin>
+               <Insets left="120.0" top="15.0" />
+            </GridPane.margin>
+         </Label>
+         <Label text="Reps:" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="40.0" left="120.0" />
+            </GridPane.margin>
+         </Label>
+         <Button mnemonicParsing="false" onAction="#saveExerciseForMonday" text="Save" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+         </Button>
+         <TextField fx:id="thursdayRepsTextField" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="38.0" left="155.0" right="155.0" />
+            </GridPane.margin>
+         </TextField>
+         <Button mnemonicParsing="false" onAction="#saveExerciseForThursday" text="Save" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+         </Button>
+         <TextField fx:id="tuesdayRepsTextField" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="35.0" left="155.0" right="155.0" />
+            </GridPane.margin>
+         </TextField>
+         <Label text="Sets:" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <GridPane.margin>
+               <Insets left="120.0" top="15.0" />
+            </GridPane.margin>
+         </Label>
+         <Label text="Reps:" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="40.0" left="120.0" />
+            </GridPane.margin>
+         </Label>
+         <Button mnemonicParsing="false" onAction="#saveExerciseForTuesday" text="Save" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+         <Label text="Sets:" GridPane.columnIndex="2" GridPane.rowIndex="6">
+            <GridPane.margin>
+               <Insets left="120.0" top="15.0" />
+            </GridPane.margin>
+         </Label>
+         <TextField fx:id="wednesdayRepsTextField" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="35.0" left="155.0" right="155.0" />
+            </GridPane.margin>
+         </TextField>
+         <Label text="Reps:" GridPane.columnIndex="2" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="40.0" left="120.0" />
+            </GridPane.margin>
+         </Label>
+         <Button mnemonicParsing="false" onAction="#saveExerciseForWednesday" text="Save" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+         <TextField fx:id="fridayRepsTextField" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="38.0" left="155.0" right="155.0" />
+            </GridPane.margin>
+         </TextField>
+         <Button mnemonicParsing="false" onAction="#saveExerciseForFriday" text="Save" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="BOTTOM" />
+         <TextField fx:id="saturdayRepsTextField" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="38.0" left="155.0" right="155.0" />
+            </GridPane.margin>
+         </TextField>
+         <Button mnemonicParsing="false" onAction="#saveExerciseForSaturday" text="Save" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="BOTTOM" />
+         <Button mnemonicParsing="false" onAction="#saveNewPerson" prefHeight="39.0" prefWidth="118.0" text="Save person" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+            <GridPane.margin>
+               <Insets top="15.0" />
+            </GridPane.margin>
+         </Button>
+         <Label text="Reps:" GridPane.rowIndex="7" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="41.0" left="120.0" />
+            </GridPane.margin>
+         </Label>
+         <Label text="Sets:" GridPane.rowIndex="7">
+            <GridPane.margin>
+               <Insets left="120.0" top="10.0" />
+            </GridPane.margin>
+         </Label>
+         <Label text="Reps:" GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="41.0" left="120.0" />
+            </GridPane.margin>
+         </Label>
+         <Label text="Sets:" GridPane.columnIndex="1" GridPane.rowIndex="7">
+            <GridPane.margin>
+               <Insets left="120.0" top="10.0" />
+            </GridPane.margin>
+         </Label>
+         <Label text="Reps:" GridPane.columnIndex="2" GridPane.rowIndex="7" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+               <Insets bottom="41.0" left="120.0" />
+            </GridPane.margin>
+         </Label>
+         <Label text="Sets:" GridPane.columnIndex="2" GridPane.rowIndex="7">
+            <GridPane.margin>
+               <Insets left="120.0" top="10.0" />
+            </GridPane.margin>
+         </Label>
+         <DatePicker fx:id="personMembershipDateDatePicker" prefHeight="25.0" prefWidth="341.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+            <GridPane.margin>
+               <Insets left="15.0" right="15.0" />
+            </GridPane.margin>
+         </DatePicker>
+      </children>
+   </GridPane>
+</AnchorPane>
+   </content>
+</ScrollPane>

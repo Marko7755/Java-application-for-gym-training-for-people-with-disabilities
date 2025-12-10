@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="534.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.projekt.controller.DeletePersonController">
+    <children>
+        <HBox fx:id="menuBarHbox" prefHeight="65.0" prefWidth="606.0" />
+        <GridPane layoutX="1.0" layoutY="74.0" prefHeight="462.0" prefWidth="606.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="316.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.0" minWidth="10.0" prefWidth="290.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="104.0" minHeight="5.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="85.19998168945312" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="57.20001525878908" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="113.00004882812499" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="220.0" minHeight="10.0" prefHeight="95.39995117187499" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Deleting a Person" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                    <GridPane.margin>
+                        <Insets top="10.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial Black" size="24.0" />
+                    </font>
+                </Label>
+                <Label text="Enter Person's Club ID:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Bell MT" size="18.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets right="5.0" />
+                    </GridPane.margin>
+                </Label>
+                <Button mnemonicParsing="false" onAction="#deletePerson" prefHeight="36.0" prefWidth="79.0" text="Delete" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <TextField fx:id="personTextField" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" right="110.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label fx:id="personInfoLabel" prefHeight="125.0" prefWidth="388.0" stylesheets="@../../../style/personInfoLabel.css" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#checkPerson" prefHeight="31.0" prefWidth="98.0" text="Check Person" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
