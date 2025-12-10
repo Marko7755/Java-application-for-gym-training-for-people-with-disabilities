@@ -3,6 +3,11 @@
 A Java-based application designed to support gym training for people with disabilities.  
 The platform provides accessible workout plans, personalized training options, and progress tracking through a user-friendly interface built with JavaFX. An embedded H2 Database is used for storing user and exercise information.
 
+🎥 Demo Video
+
+Watch the project presentation on YouTube:
+👉 https://youtu.be/8-Mb5gW-qhw
+
 ---
 
 ## 🚀 Features
